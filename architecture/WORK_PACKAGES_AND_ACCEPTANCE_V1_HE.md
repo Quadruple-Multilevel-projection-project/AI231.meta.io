@@ -1,4 +1,4 @@
-# AI231 — חבילות עבודה, אחריות ומבחני קבלה
+# MIOMA-1 + AI231 — חבילות עבודה, אחריות ומבחני קבלה
 ## Work Breakdown Structure V1
 
 **Status:** PROPOSED  
@@ -11,7 +11,7 @@
 | WP01 | Requirements & architecture | Chief/System Architect | Institute goals, source repos | Requirements baseline, context model, ADRs | reviewed scope and traceability matrix |
 | WP02 | Knowledge ingestion | Data/Backend Lead | Wix, GitHub, documents | connectors, ingestion jobs, source registry | repeatable import and source-hash tests |
 | WP03 | Evidence & provenance | Data Governance Lead | source records | evidence schema, lineage, claim registry | every sample claim links to source locator |
-| WP04 | Logical rule service | Formal Methods Lead | approved rule corpus, kernel interface | evaluation API, rule versions, trace | deterministic fixtures and contradiction tests |
+| WP04 | MIOMA-1 / logical service adapter | Formal Methods Lead | approved rule corpus, kernel interface | versioned MIOMA-1 adapter, rule versions, trace | deterministic fixtures and contradiction tests |
 | WP05 | Agent platform | Agent Systems Lead | agent contracts | registry, runtime, sandbox, tool gateway | permission and isolation tests |
 | WP06 | Workflow orchestration | Platform Lead | workflow definitions | durable orchestrator, retry/checkpoint logic | replay, idempotency, recovery tests |
 | WP07 | Authority & rights | Security/Policy Engineering Lead | authority matrix, policy rules | policy enforcement, approval gates | unauthorized actions blocked in negative tests |
@@ -26,6 +26,8 @@
 Owners are role descriptions, not named appointments. The final staffing plan must identify accountable people and their qualifications.
 
 ## 2. Proposed 24-month sequence
+
+התקופה היא הנחת תכנון בלבד. יש לבנות תוכנית MIOMA-1 ייעודית הכוללת אבני דרך נפרדות לליבת Miopane-E, בקר Kraken-36, מנוע המחרוזות הטופולוגיות ושכבת Projection Shell. אין לסמן יכולת פיזיקלית קוונטית כהושלמה על בסיס סימולציה בלבד.
 
 | Period | Primary focus | Exit condition |
 |---|---|---|
