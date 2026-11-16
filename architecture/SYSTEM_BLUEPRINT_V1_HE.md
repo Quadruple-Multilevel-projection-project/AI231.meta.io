@@ -1,4 +1,4 @@
-# AI231 — System Architecture Blueprint V1
+# AI231 + MIOMA-1 — System Architecture Blueprint V1.1
 ## תכנון ארכיטקטורה משולבת למכון לממשל נוירוני
 
 **Status:** PROPOSED / DESIGN BASELINE  
@@ -7,6 +7,12 @@
 **Important:** This is a proposed architecture. It does not assert that the integrated platform is implemented, legally authorized, production-ready, or globally deployed.
 
 ## 1. Architectural objectives
+
+### 1.1 Institutional and service model
+The Institute is the proposed public-service provider. MIOMA-1 is the logical-processing infrastructure. AI231 is the service platform. The agent cooperative is the execution/orchestration workforce. These are separate responsibilities and must not be collapsed into a single product or legal entity. The planned service is offered to state/public recipients without charge at the current planning stage; long-term operating finance is unresolved and must be transparent. No citizen data sale, advertising-based profiling, or allocation of civic rights by Logic Coin is permitted by this design baseline.
+
+### 1.2 MIOMA-1 integration boundary
+MIOMA-1 is a distinct infrastructure project consumed by AI231 through a versioned adapter. Its source architecture names Miopane-E Processor Core, **Kraken-36 Logic Controller**, Topological String Engine, and Projection Shell / 231 States. The name Koshan-35 is not part of this baseline. Software simulation, mathematical model, hardware proof-of-principle, and physical topological quantum implementation are separate evidence classes. Majorana braiding, protected quantum states, entanglement and virtual qubits must remain research claims until independently measured and reproduced.
 
 1. Provide a single, auditable workflow platform for the Institute.
 2. Preserve source provenance from ingestion through every material output.
@@ -180,19 +186,27 @@ stateDiagram-v2
 
 Workflow state is durable. Re-running a node must be idempotent where possible. External side effects require idempotency keys and a permission check immediately before execution.
 
-## 8. Logical kernel integration boundary
+## 8. MIOMA-1 and WANGA logical integration boundary
 
-AI231/WANGA logical processing is integrated through a versioned adapter, not by direct coupling between every agent and the kernel.
+AI231 consumes MIOMA-1 as a logical-processing service through a versioned adapter. The adapter is the only supported integration boundary; agents must not connect directly to internal processor components.
 
-Adapter responsibilities:
-1. Convert candidate language-derived structures into typed input.
-2. Validate JSON schema and required identifiers.
-3. Submit only explicit evidence, claims, and rules.
-4. Receive derivation trace, contradictions, rejection reasons, and limitations.
-5. Preserve original language and source references.
-6. Prevent unverified derived output from being re-labelled as source fact.
+MIOMA-1 source architecture:
+- **Miopane-E Processor Core** — processor-core design.
+- **Kraken-36 Logic Controller** — logic/state controller. Use this exact project name; do not substitute Koshan-35.
+- **Topological String Engine** — proposed topological/string calculation layer.
+- **Projection Shell / 231 States** — proposed projection and state layer.
 
-The WANGA-LAB Logical AI Kernel V1 document describes a bounded structured rule engine and explicitly lists limitations: it does not parse arbitrary language, autonomously acquire rules, or establish semantics from the 231-gate table. Those limits remain binding until code and tests demonstrate otherwise.
+Integration sequence:
+1. Submit typed input with explicit schema, provenance, rule-set version and operation ID.
+2. Validate the request and reject missing/ambiguous fields.
+3. Route to the available MIOMA-1 implementation profile (software prototype, simulator, hardware proof-of-principle, or future physical implementation); record the profile explicitly.
+4. Return result, derivation trace, contradictions, limits, test profile and reproducibility metadata.
+5. Preserve the original source/evidence references in AI231.
+6. Do not promote output to VERIFIED unless a named verification procedure and independent evidence support that state.
+
+The WANGA-LAB Logical AI Kernel V1 is a related documented bounded symbolic-rule implementation. It is not automatically identical to MIOMA-1. Its own stated limitations remain binding until implementation and tests establish otherwise: it does not parse arbitrary natural language, autonomously acquire rules, or establish semantics from the 231-gate table.
+
+**Evidence boundary:** mathematical/topological software calculations do not prove a physical Majorana device, quantum entanglement, topological protection or quantum hardware performance. Those claims require separate experimental design, hardware evidence, independent replication and review.
 
 Reference: https://github.com/Quadruple-Multilevel-projection-project/WANGA-LAB/blob/main/docs/LOGIC_KERNEL_V1_IMPLEMENTATION.md
 
